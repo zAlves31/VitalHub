@@ -4,8 +4,7 @@ import { Container } from "../../components/Container/Style"
 import { Input } from "../../components/Input/Styled"
 import { LinkCalcel } from "../../components/Links/Style"
 import { Logo } from "../../components/Logo/Style"
-import { Title } from "../../components/Title/Style"
-import { Text } from "react-native"
+import { Subtitle, Title } from "../../components/Title/Style"
 
 
 export const Account = ({navigation}) => {
@@ -15,13 +14,19 @@ export const Account = ({navigation}) => {
 
             <Title>Criar conta</Title>
 
-            <Text>Insira seu endereço de e-mail e senha para realizar seu cadastro.</Text>
+            <Subtitle>Insira seu endereço de e-mail e senha para realizar seu cadastro.</Subtitle>
 
             <Input placeholder="Usuário ou E-mail"/>
 
-            <Input placeholder="Senha"/>
+            <Input
+                placeholder="Senha"
+                secureTextEntry={true}  
+            />
 
-            <Input placeholder="Confirme sua senha"/>
+            <Input 
+                placeholder="Confirme sua senha"
+                secureTextEntry={true}  
+            />
 
             <Button>
                 <ButtonTitle>CADASTRAR</ButtonTitle>

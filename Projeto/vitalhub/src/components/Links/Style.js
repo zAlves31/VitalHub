@@ -19,3 +19,9 @@ export const LinkCalcel = styled.Text`
     text-decoration: underline;
     margin-top:18px ;
 `
+
+export const LinkResend = styled.Text`
+    color:#4D659D ;
+    text-decoration: underline;
+    margin-top:18px ;
+`

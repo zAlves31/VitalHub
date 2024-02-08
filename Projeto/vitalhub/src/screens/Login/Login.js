@@ -18,10 +18,12 @@ export const login = ({navigation}) => {
 
             <Input placeholder="Usuário ou E-mail"/>
             
-            <Input placeholder="Senha" 
+            <Input 
+                placeholder="Senha"
+                secureTextEntry={true}    
             />
 
-            <LinkMedium>Esqueceu sua senha?</LinkMedium>
+            <LinkMedium onPress={() => navigation.navigate("Recoverpassword")}>Esqueceu sua senha?</LinkMedium>
 
             <Button>
                 <ButtonTitle>ENTRAR</ButtonTitle>
