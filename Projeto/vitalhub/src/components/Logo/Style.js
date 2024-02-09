@@ -7,3 +7,8 @@ align-self: center;
 margin: 20px 0px;
 
 `
+
+export const Imageuser = styled.Image`
+    width:100%;
+    height:40%;
+`

@@ -11,6 +11,7 @@ import { Quicksand_500Medium, Quicksand_600SemiBold } from '@expo-google-fonts/q
 import { Recoverpassword } from './src/screens/Recoverpassword/Recoverpassword';
 import { Validatecode } from './src/screens/Validatecode/Validatecode';
 import { Resetpassword } from './src/screens/Resetpassword/Resetpassword';
+import { Userquery } from './src/screens/Userquery/Userquery';
 
 export default function App() {
 
@@ -64,6 +65,12 @@ export default function App() {
         name='Resetpassword'
         component={Resetpassword}
         options={{ title: 'Resetpassword' }}        
+        />
+
+        <Stack.Screen 
+        name='Userquery'
+        component={Userquery}
+        options={{ title: 'Userquery' }}        
         />
 
 

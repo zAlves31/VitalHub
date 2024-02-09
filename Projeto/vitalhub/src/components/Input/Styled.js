@@ -25,3 +25,21 @@ export const Inputnumeric = styled.TextInput`
     color:#34898F ;
 
 `
+export const Inputuser = styled.TextInput`
+    width: 90%;
+    height: 120px;
+    border: 2px solid #49b3ba;
+    font-size: 14px;
+    margin:10px ;
+    font-family:'MontserratAlternates_600SemiBold';
+    border-radius:5px ;
+    color:#34898F ;
+    padding: 16px;
+    text-align: justify;
+    text-align-vertical:top ;
+`
+
+export const Inputuserm = styled(Input)`
+    font-size:14px ;
+    font-family:'MontserratAlternates_600SemiBold';
+`

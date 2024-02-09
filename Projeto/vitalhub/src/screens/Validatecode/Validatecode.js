@@ -29,6 +29,8 @@ export const Validatecode = ({navigation}) => {
                     keyboardType="numeric"
                     maxLength={1}
                     textAlign='center'
+                 
+                    
                     
                 />
 
