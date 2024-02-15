@@ -16,6 +16,12 @@ export const Containerinput = styled.SafeAreaView`
 
 export const Containeruser = styled.SafeAreaView`
     flex-direction:row;
+    justify-content:center ;
 `
 export const Containerrecord = styled.SafeAreaView`
+    flex: 1;
+    align-items: center;
+    background-color: #ffffff;
+    margin-top: 30px;
+
 `

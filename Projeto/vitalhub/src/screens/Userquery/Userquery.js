@@ -1,6 +1,6 @@
 import { Button } from "../../components/Button/Style"
 import { ButtonTitle } from "../../components/ButtonTitle/Style"
-import { Container, Containeruser } from "../../components/Container/Style"
+import { Container, Containerrecord, Containeruser } from "../../components/Container/Style"
 import { Inputuser, Inputuserm } from "../../components/Input/Styled"
 import { LinkCalcel } from "../../components/Links/Style"
 import { Imageuser } from "../../components/Logo/Style"
@@ -20,7 +20,8 @@ export const Userquery = () => {
                 <Subtitleuser>22 anos</Subtitleuser>
                 <Subtitleuser>richard.kosta@gmail.com</Subtitleuser>
             </Containeruser>
-                <Container>
+            
+                <Containerrecord>
 
 
                     <Subtitleinput>Descrição da consulta</Subtitleinput>
@@ -58,7 +59,7 @@ export const Userquery = () => {
 
                     <LinkCalcel>Cancelar</LinkCalcel>
 
-                </Container>
+                </Containerrecord>
             </Scroll>
 
 
