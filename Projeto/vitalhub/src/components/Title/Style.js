@@ -28,9 +28,14 @@ export const Subtitleuser = styled.Text`
 
 export const Subtitleinput = styled.Text`
     font-size:16px;
-    font-family:Quicksand_600SemiBold ;
-    color:#33303E ;
-    text-align: justify;
+    font-family:Quicksand_600SemiBold;
+    color:#33303E;
     margin-right:170px ;
+`
+
+export const Subtitleinputlogin = styled.Text`
+    font-size:16px;
+    font-family:Quicksand_600SemiBold;
+    color:#33303E;
 `
 

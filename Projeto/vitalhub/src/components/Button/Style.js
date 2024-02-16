@@ -40,5 +40,14 @@ export const IconClose = styled.Image`
     width:100%;
     height:100% ;
 `
+
+export const Buttonprofile = styled.TouchableOpacity`
+     width:90%;
+    height:44px;
+    border-radius:5px;
+    background-color:#496BBA;
+    margin-top:30px;
+    align-items:center;
+`
    
 

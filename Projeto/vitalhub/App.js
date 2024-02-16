@@ -12,6 +12,8 @@ import { Recoverpassword } from './src/screens/Recoverpassword/Recoverpassword';
 import { Validatecode } from './src/screens/Validatecode/Validatecode';
 import { Resetpassword } from './src/screens/Resetpassword/Resetpassword';
 import { Userquery } from './src/screens/Userquery/Userquery';
+import { Userprofile } from './src/screens/Userprofile/Userprofile';
+import { Home } from './src/screens/Home/Home';
 
 export default function App() {
 
@@ -71,6 +73,18 @@ export default function App() {
         name='Userquery'
         component={Userquery}
         options={{ title: 'Userquery' }}        
+        />
+
+        <Stack.Screen 
+        name='Userprofile'
+        component={Userprofile}
+        options={{ title: 'Userprofile' }}        
+        />
+
+        <Stack.Screen 
+        name='Home'
+        component={Home}
+        options={{ title: 'Home' }}        
         />
 
 
