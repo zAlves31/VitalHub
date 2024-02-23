@@ -24,7 +24,7 @@ export const Home = () => {
   const [statusLista, setStatusLista] = useState("pendente");
   // Satate para os modais
   const [showModalCancel, setShowModalCancel] = useState(false);
-  const [showModalAppointment, setShowAppointment] = useState(true);
+  const [showModalAppointment, setShowAppointment] = useState(false);
   return (
     <Container>
       <StatusBar />
