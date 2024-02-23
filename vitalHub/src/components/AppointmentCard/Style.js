@@ -61,4 +61,8 @@ export const ButtonText = styled.Text`
     color: ${(props) => props.situacao == "pendente" ? "#c81d25" : "#344f8f"} ;
 `
 
-
+export const RecordImage = styled.Image`
+    width: 285px ;
+    height: 180px ;
+    border-radius: 10px ;
+`

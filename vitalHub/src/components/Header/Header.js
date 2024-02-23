@@ -9,7 +9,7 @@ export const Header = () => {
           <ImageUser source={{ uri: "https://github.com/zalves31.png" }} />
           <DataUser>
             <TextDefault>Bem vindo !</TextDefault>
-            <NameUser>Dr.Enzo</NameUser>
+            <NameUser>Dr.Joao</NameUser>
           </DataUser>
         </BoxUser>
 

@@ -8,6 +8,8 @@ import { useState } from "react";
 import { ListComponent } from "../../components/List/List";
 import { AppointmentCard } from "../../components/AppointmentCard/AppointmentCard";
 import CancellationModal from "../../components/CancellationModal/CancellationModal";
+import RecordModal from "../../components/RecordModal/RecordModal";
+// import RecordModal from "../../components/RecordModal/RecordModal";
 
 const Consultas = [
   { id: 1, nome: "Carlos", situacao: "pendente" },
@@ -22,7 +24,7 @@ export const Home = () => {
   const [statusLista, setStatusLista] = useState("pendente");
   // Satate para os modais
   const [showModalCancel, setShowModalCancel] = useState(false);
-  const [showModalAppointment, setShowAppointment] = useState(false);
+  const [showModalAppointment, setShowAppointment] = useState(true);
   return (
     <Container>
       <StatusBar />
@@ -79,6 +81,11 @@ export const Home = () => {
         <CancellationModal 
           visible={showModalCancel}
           setShowModalCancel={setShowModalCancel}
+        />
+
+        <RecordModal
+          visible={showModalAppointment}
+          setShowAppointment={setShowAppointment}
         />
     </Container>
   );
