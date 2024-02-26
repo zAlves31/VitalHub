@@ -33,3 +33,23 @@ export const Containerinput = styled.SafeAreaView`
     margin-top:50px ;
     
 `
+export const Containerprofile = styled.SafeAreaView`
+    width:100% ;
+    flex: 1;
+    align-items: center;
+    background-color: #ffffff;
+    margin-top: 30px;
+`
+export const Containerprofilecep = styled.SafeAreaView`
+    width: 80%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items:center ;
+  `
+
+export const Containeruser = styled.SafeAreaView`
+    width: 80%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items:center ;
+  `

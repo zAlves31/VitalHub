@@ -22,6 +22,8 @@ import { Account } from "./src/screens/Account/Account";
 import { Recoverpassword } from "./src/screens/Recoverpassword/Recoverpassword";
 import { Validatecode } from "./src/screens/Validatecode/Validatecode";
 import { Resetpassword } from "./src/screens/Resetpassword/Resetpassword";
+import { Userprofile } from "./src/screens/Userprofile/Userprofile";
+import { HomePaciente } from "./src/screens/HomePaciente/HomePaciente";
 
 
 export default function App() {
@@ -99,6 +101,22 @@ export default function App() {
           component={Resetpassword}
           options={{ title: 'Resetpassword' }}        
         />
+
+        <Stack.Screen 
+          name='Userprofile'
+          component={Userprofile}
+          options={{ title: 'Userprofile' }}        
+        />
+
+        <Stack.Screen 
+          name='HomePaciente'
+          component={HomePaciente}
+          options={{ title: 'HomePaciente' }}        
+        />
+        
+        
+
+        
 
       </Stack.Navigator>
     </NavigationContainer>

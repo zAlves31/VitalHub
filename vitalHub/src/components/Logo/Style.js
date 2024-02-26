@@ -7,3 +7,24 @@ export const Logo = styled.Image`
     align-self: center ;
     margin: 20px 0px ;
 `
+
+export const Imageuser = styled.Image`
+    width: 100%;
+    height: 360px;
+
+    align-self: center ;
+    margin: 20px 0px ;
+`
+
+export const IconeConsulta = styled.Image`
+    width: 60px;
+    height: 60px;
+
+    align-self: center ;
+    margin: 20px 0px ;
+    margin-left: 75%;
+    border-radius:12px ;
+`
+
+
+

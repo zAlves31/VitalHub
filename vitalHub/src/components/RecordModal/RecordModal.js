@@ -5,12 +5,12 @@ import { ModalContent, ModalText, PatientModal } from "../CancellationModal/styl
 import { RecordImage } from "../AppointmentCard/Style";
 
 
-const RecordModal = ({ visible, setShowAppointment, ...rest }) => {
+const RecordModal = ({ navigation, visible, setShowAppointment, ...rest }) => {
     return (
         <Modal {...rest} visible={visible} transparent={true} animationType="fade">
             <PatientModal>
                 <ModalContent>
-                    <RecordImage source={{ uri: "https://github.com/gustavopasqualetti.png" }} />
+                    <RecordImage source={{ uri: "https://github.com/gustavopasqualetti.png"}}/>
 
                     <Title>Gustavo Pasqualetti</Title>
 
@@ -18,7 +18,7 @@ const RecordModal = ({ visible, setShowAppointment, ...rest }) => {
                         18 anos gustavo@gmail.com
                     </ModalText>
 
-                    <ButtonModal>
+                    <ButtonModal onPress={() => {navigation.navigate("Userprofile")}}>
                         <ButtonTitle>Inserir Prontuário</ButtonTitle>
                     </ButtonModal>
 

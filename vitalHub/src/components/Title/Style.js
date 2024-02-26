@@ -19,3 +19,12 @@ export const SubtitleBlue = styled.Text`
     font-family:Quicksand_500Medium ;
     color:#496BBA ;
 `
+
+export const Subtitleuser = styled.Text`
+    margin-left:30px ;
+    font-size: 16px ;
+    color: #5f5c6b ;
+    text-align: center ;
+    margin-top: 10px ;
+    font-family: "Quicksand_500Medium";
+`
