@@ -28,3 +28,11 @@ export const Subtitleuser = styled.Text`
     margin-top: 10px ;
     font-family: "Quicksand_500Medium";
 `
+
+export const SubtitleSchedule = styled.Text`
+    font-size:16px;
+    font-family:Quicksand_500Medium ;
+    padding:10px ;
+    margin-top:18px ;
+    margin-right:45% ;
+`

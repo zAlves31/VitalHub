@@ -4,12 +4,14 @@ import { Container } from "../../components/Container/Style";
 import { HeaderPaciente } from "../../components/HeaderPaciente/HeaderPaciente"
 
 import { AbsListAppointment } from "../../components/AbsListAppointment/AbsListAppointment";
-import { useState } from "react";
 import { ListComponent } from "../../components/List/List";
 import { AppointmentCardPaciente } from "../../components/AppointmentCardPaciente/AppointmentCardPaciente";
 import CancellationModal from "../../components/CancellationModal/CancellationModal";
 import { FilterAppointment } from "../Home/Style";
 import { IconeConsulta } from "../../components/Logo/Style";
+import { ButtonSchedule } from "../../components/Button/Style";
+import ScheduleModal from "../../components/ScheduleModal/ScheduleModal";
+import { useState } from "react";
 
 const Consultas = [
     { id: 1, nome: "Carlos", situacao: "pendente" },
@@ -21,6 +23,7 @@ const Consultas = [
 
 export const HomePaciente = ({navigation}) => {
     const [statusLista, setStatusLista] = useState("pendente");
+    const [showModalSchedule, setshowModalSchedule] = useState(false);
     const [showModalCancel, setShowModalCancel] = useState(false);
     const [showModalAppointment, setShowAppointment] = useState(false);
     return(
@@ -70,14 +73,23 @@ export const HomePaciente = ({navigation}) => {
                 }
             />
 
+
+            <ButtonSchedule onPress={() => setshowModalSchedule(true)}>
+                
+                <IconeConsulta 
+                    source={require("../../assets/Iconeconsulta.png")} 
+                    navigation={navigation}
+                />
+            </ButtonSchedule>
+            
             <CancellationModal 
             visible={showModalCancel}
             setShowModalCancel={setShowModalCancel}
             />
 
-            <IconeConsulta 
-                source={require("../../assets/Iconeconsulta.png")} 
-                navigation={navigation}
+            <ScheduleModal
+                visible={showModalSchedule}
+                setshowModalSchedule={setshowModalSchedule}
             />
 
         </Container>

@@ -21,8 +21,7 @@ export const IconeConsulta = styled.Image`
     height: 60px;
 
     align-self: center ;
-    margin: 20px 0px ;
-    margin-left: 75%;
+    margin-left: 60%;
     border-radius:12px ;
 `
 

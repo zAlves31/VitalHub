@@ -62,3 +62,16 @@ export const IconClose = styled.Image`
     width:100%;
     height:100% ;
 `
+
+export const ButtonSchedule = styled.TouchableOpacity`
+    width: 60px;
+    height: 60px;
+
+    align-self: center ;
+    margin: 20px 20px ;
+    margin-left: 75%;
+`
+
+export const ButtonModalSchedule = styled(Button)`
+    width: 90% ;
+`

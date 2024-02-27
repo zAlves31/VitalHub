@@ -45,11 +45,18 @@ export const Containerprofilecep = styled.SafeAreaView`
     justify-content: space-between;
     flex-direction: row;
     align-items:center ;
-  `
+`
 
 export const Containeruser = styled.SafeAreaView`
     width: 80%;
     justify-content: space-between;
     flex-direction: row;
     align-items:center ;
+`
+
+export const ContainerSchedule = styled.SafeAreaView`
+    width: 100%;
+    padding: 20px ;
+    margin-top:85%;
+    margin-left:9% ;
   `
