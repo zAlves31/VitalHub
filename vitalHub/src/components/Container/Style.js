@@ -57,6 +57,7 @@ export const Containeruser = styled.SafeAreaView`
 export const ContainerSchedule = styled.SafeAreaView`
     width: 100%;
     padding: 20px ;
-    margin-top:85%;
+    margin-top:30%;
     margin-left:9% ;
   `
+

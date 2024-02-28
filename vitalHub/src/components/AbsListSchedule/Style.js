@@ -15,7 +15,7 @@ export const ButtonTabsStyles = styled.TouchableHighlight`
 `
 
 export const ButtonTextStyles = styled.Text`
-    font-size: 12px ;
+    font-size: 15px ;
     font-family:'MontserratAlternates_600SemiBold' ;
 
     /* se o clickButton for true, a cor da fonte será branca, caso contrário azul */

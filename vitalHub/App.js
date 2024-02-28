@@ -24,6 +24,7 @@ import { Validatecode } from "./src/screens/Validatecode/Validatecode";
 import { Resetpassword } from "./src/screens/Resetpassword/Resetpassword";
 import { Userprofile } from "./src/screens/Userprofile/Userprofile";
 import { HomePaciente } from "./src/screens/HomePaciente/HomePaciente";
+import { SelectClinic } from "./src/screens/SelectClinic/SelectClinic";
 
 
 export default function App() {
@@ -113,9 +114,12 @@ export default function App() {
           component={HomePaciente}
           options={{ title: 'HomePaciente' }}        
         />
-        
-        
 
+        <Stack.Screen 
+          name='SelectClinic'
+          component={SelectClinic}
+          options={{ title: 'SelectClinic' }}        
+        />
         
 
       </Stack.Navigator>

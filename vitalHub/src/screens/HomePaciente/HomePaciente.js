@@ -90,6 +90,7 @@ export const HomePaciente = ({navigation}) => {
             <ScheduleModal
                 visible={showModalSchedule}
                 setshowModalSchedule={setshowModalSchedule}
+                navigation={navigation}
             />
 
         </Container>

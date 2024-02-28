@@ -36,3 +36,9 @@ export const SubtitleSchedule = styled.Text`
     margin-top:18px ;
     margin-right:45% ;
 `
+
+export const TitleB = styled(Title)`
+color: #33303E;
+margin-top: 80px;
+margin-bottom: 40px;
+`

@@ -26,3 +26,11 @@ export const LinkResend = styled.Text`
     text-decoration: underline;
     margin-top:18px ;
 `
+
+export const CancelAppointment = styled.Text`
+color: #344F8F;
+text-decoration: underline;
+font-family: MontserratAlternates_600SemiBold;
+margin-bottom: 80px;
+margin-top: 40px;
+`

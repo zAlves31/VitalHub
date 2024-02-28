@@ -3,14 +3,14 @@ import { PatientModal } from "../CancellationModal/style";
 import { FilterAppointment } from "../../screens/Home/Style";
 import { AbsListAppointment } from "../AbsListAppointment/AbsListAppointment";
 import { useState } from "react";
-import { ModalContentSchedule } from "../ScheduleModal/Style"
+import { BlueTitle, LabelSchedule, ModalContentSchedule, TypeButton } from "../ScheduleModal/Style"
 import { SubtitleSchedule, Title } from "../Title/Style";
 import { ButtonModalSchedule, ButtonSecondary, ButtonSecondaryTitle, ButtonTitle } from "../Button/Style";
 import { ContainerSchedule } from "../Container/Style";
 import { AbsListSchedule } from "../AbsListSchedule/AbsListSchedule";
 import { BoxInput } from "../BoxInput/BoxInput";
 
-const ScheduleModal = ({visible, setshowModalSchedule, ...rest}) =>{
+const ScheduleModal = ({navigation, visible, setshowModalSchedule, ...rest}) =>{
     const [statusLista, setStatusLista] = useState("pendente");
     return(
         <Modal {...rest} visible={visible} transparent={true} animationType="fade">
@@ -42,14 +42,14 @@ const ScheduleModal = ({visible, setshowModalSchedule, ...rest}) =>{
                             />
                         </FilterAppointment>
 
-                        <BoxInput
-                            fieldWidht={80}
-                            textLabel='Data de nascimento:'
-                            placeholder='DD/MM/AAAA'
-                            />
+                        <LabelSchedule>Informe a localização desejada</LabelSchedule>
+                        <TypeButton>
+                            <BlueTitle>Informe a localização</BlueTitle>
+                        </TypeButton>
+                        
 
                         <ContainerSchedule>
-                            <ButtonModalSchedule>
+                            <ButtonModalSchedule onPress={() => {navigation.navigate("SelectClinic")}}>
                                 <ButtonTitle>Continuar</ButtonTitle>
                             </ButtonModalSchedule>
 
