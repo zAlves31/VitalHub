@@ -33,7 +33,7 @@ export const SelectClinic = ({navigation}) => {
             </ScrollView>
 
 
-            <Button>
+            <Button onPress={() => navigation.navigate("SelectDoctor")}>
                 <ButtonTitle>
                     CONTINUAR
                 </ButtonTitle>

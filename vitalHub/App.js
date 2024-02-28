@@ -25,6 +25,7 @@ import { Resetpassword } from "./src/screens/Resetpassword/Resetpassword";
 import { Userprofile } from "./src/screens/Userprofile/Userprofile";
 import { HomePaciente } from "./src/screens/HomePaciente/HomePaciente";
 import { SelectClinic } from "./src/screens/SelectClinic/SelectClinic";
+import { SelectDoctor } from "./src/screens/SelectDoctor/SelectDoctor";
 
 
 export default function App() {
@@ -119,6 +120,12 @@ export default function App() {
           name='SelectClinic'
           component={SelectClinic}
           options={{ title: 'SelectClinic' }}        
+        />
+
+        <Stack.Screen 
+          name='SelectDoctor'
+          component={SelectDoctor}
+          options={{ title: 'SelectDoctor' }}        
         />
         
 
