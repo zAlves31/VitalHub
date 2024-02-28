@@ -9,8 +9,9 @@ import { AppoimentCardClinic } from "../../components/AppoimentCardClinic/Appoim
 
 const Clinicas = [
     { id: 1, nome: "Clínica Natureh", endereco: "São Paulo, SP", avaliacao: "4.5", funcionamento: "Seg-Sex" },
-    { id: 2, nome: "Clinica GuVets", endereco: "Santo Andre, SP", avaliacao: "4.9", funcionamento: "Seg-Sex" },
-    { id: 3, nome: "Clinica Salutis", endereco: "São Paulo, SP", avaliacao: "4.3", funcionamento: "Seg-Sex" }
+    { id: 2, nome: "UPA Vila luzita", endereco: "Santo Andre, SP", avaliacao: "4.9", funcionamento: "Seg-Sex" },
+    { id: 3, nome: "SP Oncologia Clínica", endereco: "São Paulo, SP", avaliacao: "4.3", funcionamento: "Seg-Sex" },
+    { id: 4, nome: "Diamond Pró-Mulher", endereco: "São Paulo, SP", avaliacao: "4.3", funcionamento: "Seg-Sex" }
  
 ]
 
