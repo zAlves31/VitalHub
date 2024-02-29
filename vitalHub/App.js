@@ -26,6 +26,7 @@ import { Userprofile } from "./src/screens/Userprofile/Userprofile";
 import { HomePaciente } from "./src/screens/HomePaciente/HomePaciente";
 import { SelectClinic } from "./src/screens/SelectClinic/SelectClinic";
 import { SelectDoctor } from "./src/screens/SelectDoctor/SelectDoctor";
+import { SelectDate } from "./src/screens/SelectDate/SelectDate";
 
 
 export default function App() {
@@ -126,6 +127,12 @@ export default function App() {
           name='SelectDoctor'
           component={SelectDoctor}
           options={{ title: 'SelectDoctor' }}        
+        />
+
+        <Stack.Screen 
+          name='SelectDate'
+          component={SelectDate}
+          options={{ title: 'SelectDate' }}        
         />
         
 

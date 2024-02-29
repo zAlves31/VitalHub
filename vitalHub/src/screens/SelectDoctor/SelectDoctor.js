@@ -32,7 +32,7 @@ export const SelectDoctor = ({navigation}) => {
             </ScrollView>
 
 
-            <Button>
+            <Button onPress={() => navigation.navigate("SelectDate")}>
                 <ButtonTitle>
                     CONTINUAR
                 </ButtonTitle>
