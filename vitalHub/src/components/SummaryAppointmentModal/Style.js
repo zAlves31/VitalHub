@@ -4,11 +4,9 @@ export const BoxSchedule = styled.View`
 width: 90%;
 flex-direction: column;
 align-items: flex-start;
-margin-bottom: 20px;
 `
 export const SubTitleSchedule = styled.Text`
 width: 70%;
-margin-bottom: 20px;
 `
 export const CancelSchedule = styled.Text`
 color: #344F8F;
@@ -29,8 +27,8 @@ justify-content: center;
 export const ContentModal = styled.View`
 
 background-color: white;
-padding: 20px;
 border-radius: 10px;
 width: 90%;
+height:95% ;
 align-items: center;
 `

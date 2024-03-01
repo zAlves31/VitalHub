@@ -1,12 +1,12 @@
 import { Modal } from "react-native"
-import { Subtitle, Title } from "../Title/Style"
+import { Subtitle, SubtitleSummary, Title } from "../Title/Style"
 import { LabelSchedule } from "../ScheduleModal/Style"
 import { BoxSchedule, CancelSchedule, SubTitleSchedule, ContentModal, ViewModal } from "./Style"
 import { Button } from "../Button/Style"
 import { ButtonTitle } from "../ButtonTitle/Style"
 
 export const SummaryScheduleModal = ({
-    visible, setShowModalSummary, ...rest
+    navigation, visible, setShowModalSummary, ...rest
 }) => {
 
 
@@ -20,20 +20,20 @@ export const SummaryScheduleModal = ({
 
                     <BoxSchedule>
                         <LabelSchedule>Data da consulta</LabelSchedule>
-                        <Subtitle>1 de Novembro de 2023</Subtitle>
+                        <SubtitleSummary>1 de Novembro de 2023</SubtitleSummary>
                     </BoxSchedule>
                     <BoxSchedule>
                         <LabelSchedule>Médico(a) da consulta</LabelSchedule>
-                        <Subtitle>Dra Alessandra</Subtitle>
-                        <Subtitle>Demartologa, Esteticista</Subtitle>
+                        <SubtitleSummary>Dra Alessandra</SubtitleSummary>
+                        <SubtitleSummary>Demartologa, Esteticista</SubtitleSummary>
                     </BoxSchedule>
                     <BoxSchedule>
                         <LabelSchedule>Local da consulta</LabelSchedule>
-                        <Subtitle>São Paulo, SP</Subtitle>
+                        <SubtitleSummary>São Paulo, SP</SubtitleSummary>
                     </BoxSchedule>
                     <BoxSchedule>
                         <LabelSchedule>Tipo da consulta</LabelSchedule>
-                        <Subtitle>Rotina</Subtitle>
+                        <SubtitleSummary>Rotina</SubtitleSummary>
                     </BoxSchedule>
 
                     <Button>
@@ -42,7 +42,7 @@ export const SummaryScheduleModal = ({
                         </ButtonTitle>
                     </Button>
 
-                    <CancelSchedule>Cancelar</CancelSchedule>
+                    <CancelSchedule onPress={() => setShowModalSummary(false)} >Cancelar</CancelSchedule>
 
 
                 </ContentModal>

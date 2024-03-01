@@ -12,7 +12,7 @@ export const ModalContentSchedule = styled.View`
 export const LabelSchedule = styled.Text`
 font-family: 'Quicksand_600SemiBold';
 margin-bottom: 10px;
-font-size: 15px;
+font-size: 16px;
 margin-top: 30px;
 margin-right:30% ;
 `

@@ -44,7 +44,7 @@ export default function FullCalender({ selectedDate = '', handleSelectedDateFn =
             style={styles.calendar}
             theme={{
                 dotColor: '#60BFC5',
-                calendarBackground: 'white'
+                calendarBackground: 'transparent'
             }}
             renderHeader={renderHeader} // Renderizar o cabeçalho personalizado
             dayComponent={({ date, state }) =>
