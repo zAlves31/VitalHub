@@ -8,8 +8,8 @@ export const Navegacao = ({ navigation }) => {
       <Button title="Home" onPress={() => navigation.navigate("Home")} />
 
       <Button title="HomePaciente" onPress={() => navigation.navigate("HomePaciente")} />
+      
 
-      <Button title="SelectDate" onPress={() => navigation.navigate("SelectDate")} />
 
     </View>
   );

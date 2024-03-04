@@ -6,16 +6,18 @@ export function Input({
     fieldValue,
     onchangeText,
     KeyType,
-    maxLength
+    maxLength,
+    keyboardType
 }) {
     return(
         <InputText
             placeholder={placeholder}
             editable={editable}
-            keyboardType={KeyType}
+            keyboardType={keyboardType}
             maxLenght={maxLength}
             value={fieldValue}
             onChangeText={onchangeText}
+            
         />
         
     )

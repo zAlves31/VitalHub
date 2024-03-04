@@ -12,6 +12,7 @@ import { IconeConsulta } from "../../components/Logo/Style";
 import { ButtonSchedule } from "../../components/Button/Style";
 import ScheduleModal from "../../components/ScheduleModal/ScheduleModal";
 import { useState } from "react";
+import DoctorModal from "../../components/DoctorModal/DoctorModal";
 
 const Consultas = [
     { id: 1, nome: "Carlos", situacao: "pendente" },
@@ -25,6 +26,7 @@ export const HomePaciente = ({navigation}) => {
     const [statusLista, setStatusLista] = useState("pendente");
     const [showModalSchedule, setshowModalSchedule] = useState(false);
     const [showModalCancel, setShowModalCancel] = useState(false);
+    const [showModalDoctor, setshowModalDoctor] = useState(false);
     const [showModalAppointment, setShowAppointment] = useState(false);
     return(
         <Container>
@@ -92,6 +94,14 @@ export const HomePaciente = ({navigation}) => {
                 setshowModalSchedule={setshowModalSchedule}
                 navigation={navigation}
             />
+
+            <DoctorModal
+                visible={showModalDoctor}
+                setshowModalDoctor={setshowModalDoctor}
+                navigation={navigation}
+            />
+
+
 
         </Container>
             

@@ -24,18 +24,24 @@ export const Userprofile = () => {
                        fieldWidht={80}
                        textLabel='Data de nascimento:'
                        placeholder='DD/MM/AAAA'
+                       editable={true}
+                       keyboardType="numeric"
+
                     />
 
                     <BoxInput
                         fieldWidht={80}
                         textLabel='CPF:'
-                        placeholder='859********'
+                        placeholder='CPF'
+                        editable={true}
+                        keyboardType="numeric"
                     />
 
                     <BoxInput
                         fieldWidht={80}
                         textLabel='Endereço'
-                        placeholder='Rua Vicenso Silva, 987'
+                        placeholder='Endereço'
+                        editable={true}
                     />
 
 
@@ -44,12 +50,15 @@ export const Userprofile = () => {
                         <BoxInput
                             fieldWidht={45}
                             textLabel='CEP'
-                            placeholder='06548-909'
+                            placeholder='Cep'
+                            editable={true}
+                            keyboardType="numeric"
                         />
                         <BoxInput
                             fieldWidht={45}
                             textLabel='Cidade'
-                            placeholder='Moema-SP'
+                            placeholder='Cidade'
+                            editable={true}
                         />
 
                     </Containerprofilecep>
