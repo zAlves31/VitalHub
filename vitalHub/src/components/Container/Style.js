@@ -41,10 +41,12 @@ export const Containerprofile = styled.SafeAreaView`
     margin-top: 30px;
 `
 export const Containerprofilecep = styled.SafeAreaView`
-    width: 80%;
-    justify-content: space-between;
+    width: 40%;
+    justify-content: center;
     flex-direction: row;
     align-items:center ;
+    gap:30px ;
+
 `
 
 export const Containeruser = styled.SafeAreaView`
