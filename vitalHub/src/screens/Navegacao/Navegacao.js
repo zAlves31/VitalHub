@@ -9,6 +9,8 @@ export const Navegacao = ({ navigation }) => {
 
       <Button title="HomePaciente" onPress={() => navigation.navigate("HomePaciente")} />
       
+      <Button title="LocalAppointment" onPress={() => navigation.navigate("LocalAppointment")} />
+      
 
 
     </View>

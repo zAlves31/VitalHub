@@ -61,3 +61,21 @@ export const ContainerSchedule = styled.SafeAreaView`
     margin-left:9% ;
   `
 
+
+
+export const ContentLocal = styled.View`
+width: 100%;
+height: 430px;
+
+`
+
+export const ContentInfo = styled.View`
+width: 100%;
+height: 400px;
+align-items: center;
+justify-content: center;
+position: absolute;
+margin-top: 400px;
+border-radius: 20px;
+background-color: white;
+`
