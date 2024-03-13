@@ -11,8 +11,8 @@ export default function Map() {
 
   const [initialPosition, setInitialPosition] = useState(null);
   const [finalPosition, setFinalPosition] = useState({
-    latitude: -23.6020,
-    longitude: -46.6721,
+    latitude: -23.7024,
+    longitude: -46.5035,
     latitudeDelta: 0,
     longitudeDelta: 0
   })
@@ -48,12 +48,12 @@ export default function Map() {
       accuracy: LocationAccuracy.Highest,
       timeInterval: 1000,
       distanceInterval: 1
-    }, response => {
-      setInitialPosition(response.coords);
-      mapReference?.current.animateCamera({
-        pitch: 60,
-        center: response.coords
-      })
+    // }, response => {
+    //   setInitialPosition(response.coords);
+    //   mapReference?.current.animateCamera({
+    //     pitch: 60,
+    //     center: response.coords
+    //   })
     })
   }, [1000]);
 
