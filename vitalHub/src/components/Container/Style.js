@@ -81,3 +81,7 @@ margin-top: 400px;
 border-radius: 20px;
 background-color: white;
 `
+export const ContainerScroll = styled.ScrollView`
+height: 100%;
+
+`

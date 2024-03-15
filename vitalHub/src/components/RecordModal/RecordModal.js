@@ -18,7 +18,7 @@ const RecordModal = ({ navigation, visible, setShowAppointment, ...rest }) => {
                         18 anos gustavo@gmail.com
                     </ModalText>
 
-                    <ButtonModal onPress={() => {navigation.navigate("Userprofile")}}>
+                    <ButtonModal onPress={() => {navigation.navigate("InsertRecord")}}>
                         <ButtonTitle>Inserir Prontuário</ButtonTitle>
                     </ButtonModal>
 

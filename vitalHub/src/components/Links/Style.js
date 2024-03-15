@@ -34,3 +34,7 @@ font-family: MontserratAlternates_600SemiBold;
 margin-bottom: 80px;
 margin-top: 40px;
 `
+
+export const LinkModal = styled(LinkMedium)`
+margin-top: 40px;
+`

@@ -28,6 +28,9 @@ import { SelectClinic } from "./src/screens/SelectClinic/SelectClinic";
 import { SelectDoctor } from "./src/screens/SelectDoctor/SelectDoctor";
 import { SelectDate } from "./src/screens/SelectDate/SelectDate";
 import { LocalAppointment } from "./src/screens/LocalAppointment/LocalAppointment";
+import { InsertRecord } from "./src/screens/InsertRecord/InsertRecord";
+import { ViewPrecription } from "./src/screens/ViewPrecription/ViewPrecription";
+import Camerabox from "./src/screens/Camera/Camera";
 
 
 export default function App() {
@@ -141,6 +144,26 @@ export default function App() {
           component={LocalAppointment}
           options={{ title: 'LocalAppointment' }}        
         />   
+
+        <Stack.Screen 
+          name='InsertRecord'
+          component={InsertRecord}
+          options={{ title: 'InsertRecord' }}        
+        />   
+
+        <Stack.Screen 
+          name='ViewPrecription'
+          component={ViewPrecription}
+          options={{ title: 'ViewPrecription' }}        
+        />  
+
+        <Stack.Screen 
+          name='Camerabox'
+          component={Camerabox}
+          options={{ title: 'Camerabox' }}        
+        />   
+
+
         
 
       </Stack.Navigator>

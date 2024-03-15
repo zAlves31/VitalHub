@@ -1,32 +1,62 @@
-import { FieldContent } from "./Style";
-import { Label } from "../Label/Index";
-import { Input } from "../Input/Index";
+import { FieldContent, InputLabel, InputText, InputTextModificate } from "./Style"
 
 export const BoxInput = ({
-    fieldWidth = 100,
+    fieldWidht = 100,
+    fieldHeight = 50,
     editable = false,
     textLabel,
     placeholder,
     fieldValue,
-    onchangeText,
-    KeyType = 'default',
+    onChangeText = null,
+    keyType = 'default',
     maxLenght,
-    keyboardType
+    onBlur = null,
+    multiline,
+    keyboardType,
+    insertRecord
 }) => {
-    return(
-        <FieldContent fieldWidth={fieldWidth}>
-            <Label textLabel={textLabel}/>
+    return (
+        <FieldContent
+            fieldWidht={fieldWidht}
+        >
+            <InputLabel>{textLabel}</InputLabel>
 
-            <Input
-                placeholder={placeholder}
+            {insertRecord ? (
+            <>
+            <InputTextModificate
                 editable={editable}
-                KeyType={KeyType}
-                maxLenght={maxLenght}
+                placeholder={placeholder}
                 fieldValue={fieldValue}
-                onchangeText={onchangeText}
+                onChangeText={onChangeText}
+                keyType={keyType}
+                maxLenght={maxLenght}
+                onBlur={onBlur}
+                fieldHeight={fieldHeight}
+                multiline={multiline}
                 keyboardType={keyboardType}
             />
+            </>
+            ) : (
+            <>
+            <InputText
+                editable={editable}
+                placeholder={placeholder}
+                fieldValue={fieldValue}
+                onChangeText={onChangeText}
+                keyType={keyType}
+                maxLenght={maxLenght}
+                onBlur={onBlur}
+                fieldHeight={fieldHeight}
+                multiline={multiline}
+                keyboardType={keyboardType}
+                
+            />
+            </>
+            )}
+
+            
         </FieldContent>
-        
-    );
-};
+    )
+
+
+}

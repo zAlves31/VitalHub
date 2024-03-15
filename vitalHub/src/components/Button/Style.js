@@ -75,3 +75,12 @@ export const ButtonSchedule = styled.TouchableOpacity`
 export const ButtonModalSchedule = styled(Button)`
     width: 90% ;
 `
+
+export const ButtonEdit = styled(Button)`
+margin-bottom: 50px;
+`
+
+
+export const Button2 = styled(Button)`
+margin-bottom: 40px;
+`

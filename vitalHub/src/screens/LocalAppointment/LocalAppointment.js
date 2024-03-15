@@ -18,20 +18,23 @@ export const LocalAppointment = () => {
                 </ContainerLocal>
 
                 <BoxInput
-                    fieldWidht={80}
+                    fieldWidht={85}
+                    fieldHeight={60}
                     textLabel='Endereco'
                     placeholder='Rua Vicenso Silva, 987'
                 />
                 <ContainerAddress>
 
                     <BoxInput
-                        fieldWidht={35}
+                        fieldWidht={50}
+                        fieldHeight={60}
                         textLabel='Número'
                         placeholder='578'
                     />
 
                     <BoxInput
-                        fieldWidht={35}
+                        fieldWidht={90}
+                        fieldHeight={60}
                         textLabel='Bairro'
                         placeholder='Moema-SP'
                     />
